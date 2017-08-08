@@ -13,8 +13,8 @@ source /root/.bashrc
 #...
 
 ### Start ROS core and wait a few seconds
-roscore &
-sleep 5
+#roscore &
+#sleep 5
 
 ### Start ROS launch scripts
 roslaunch manual_control manual_odroid.launch &
