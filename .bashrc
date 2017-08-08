@@ -97,12 +97,13 @@ fi
 #if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 #    . /etc/bash_completion
 #fi
-IP=192.168.43.102       # Wifi
+IP_L=192.168.43.102       # Wifi Car's IP
+IP_M=192.168.43.177       # Ip of the master
 
 ### ROS Setup
-export ROS_IP=$IP
-export ROS_HOSTNAME=$IP
-export ROS_MASTER_URI=http://$IP:11311
+export ROS_IP=$IP_L
+export ROS_HOSTNAME=$IP_L
+export ROS_MASTER_URI=http://$IP_M:11311
 
 source /opt/ros/kinetic/setup.bash
 source /root/catkin_ws/devel/setup.bash
